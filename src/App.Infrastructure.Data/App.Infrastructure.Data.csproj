@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,14 +50,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\AppContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Services\ConfigService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App.Domain.Entities\App.Domain.Entities.csproj">
+      <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>
+      <Name>App.Domain.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.Domain.Interfaces\App.Domain.Interfaces.csproj">
+      <Project>{d1bacfe9-12af-4911-8d13-c54f79734065}</Project>
+      <Name>App.Domain.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\App.Infrastructure.Interfaces\App.Infrastructure.Interfaces.csproj">
       <Project>{b4ea4903-3c9d-4e86-95db-f705236aa18d}</Project>
       <Name>App.Infrastructure.Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
