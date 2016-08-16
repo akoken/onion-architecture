@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Helpers\AppContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Services\ConfigService.cs" />
