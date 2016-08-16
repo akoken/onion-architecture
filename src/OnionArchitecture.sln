@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.Data", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.Interfaces", "App.Infrastructure.Interfaces\App.Infrastructure.Interfaces.csproj", "{B4EA4903-3C9D-4E86-95DB-F705236AA18D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.DependencyResolution", "App.Infrastructure.DependencyResolution\App.Infrastructure.DependencyResolution.csproj", "{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.Logging", "App.Infrastructure.Logging\App.Infrastructure.Logging.csproj", "{9E0999AC-C4CF-4DC1-A284-5630F9248540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,14 @@ Global
 		{B4EA4903-3C9D-4E86-95DB-F705236AA18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EA4903-3C9D-4E86-95DB-F705236AA18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4EA4903-3C9D-4E86-95DB-F705236AA18D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +58,7 @@ Global
 		{4700E1DD-F069-47F7-8AB9-69289665A852} = {B77731DA-ABB8-4516-86A9-C0D8BCAEEBCD}
 		{68FBFD9A-36F5-4723-977E-C876434C09B5} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
 		{B4EA4903-3C9D-4E86-95DB-F705236AA18D} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
+		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
+		{9E0999AC-C4CF-4DC1-A284-5630F9248540} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
 	EndGlobalSection
 EndGlobal
