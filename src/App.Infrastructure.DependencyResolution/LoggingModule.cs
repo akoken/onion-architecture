@@ -1,4 +1,5 @@
 ﻿using App.Infrastructure.Interfaces;
+using App.Infrastructure.Logging;
 using Ninject.Modules;
 using NLog;
 using NLog.Config;
