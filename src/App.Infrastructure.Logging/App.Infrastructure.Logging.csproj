@@ -47,8 +47,6 @@
   <ItemGroup>
     <Compile Include="LoggingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UtcDateRenderer.cs" />
-    <Compile Include="WebVariablesRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
