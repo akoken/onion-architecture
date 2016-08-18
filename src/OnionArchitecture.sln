@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.Dependen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infrastructure.Logging", "App.Infrastructure.Logging\App.Infrastructure.Logging.csproj", "{9E0999AC-C4CF-4DC1-A284-5630F9248540}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{27A2409F-57D4-49B3-8161-DFC2B73D64A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Services.Interfaces", "App.Services.Interfaces\App.Services.Interfaces.csproj", "{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E0999AC-C4CF-4DC1-A284-5630F9248540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +68,6 @@ Global
 		{B4EA4903-3C9D-4E86-95DB-F705236AA18D} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
 		{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
 		{9E0999AC-C4CF-4DC1-A284-5630F9248540} = {4243A5A6-B1FF-4805-AD25-953843E165C2}
+		{7E071065-D5E2-4D05-B9D7-CA7CE90FCDE6} = {27A2409F-57D4-49B3-8161-DFC2B73D64A2}
 	EndGlobalSection
 EndGlobal
