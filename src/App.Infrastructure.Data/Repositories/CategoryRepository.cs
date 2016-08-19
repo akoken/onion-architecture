@@ -8,13 +8,13 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class CategoryRepository : RepositoryBase, ICategoryRepository
     {
-        private readonly AppContext _context;
+        private readonly EntityDatabaseContext _context;
         private readonly ILoggingService _loggingService;
 
         public CategoryRepository(string connectionString, ILoggingService loggingService) 
             : base(connectionString)
         {
-            _context = new AppContext(connectionString);
+            _context = new EntityDatabaseContext(connectionString);
             _loggingService = loggingService;
         }
 

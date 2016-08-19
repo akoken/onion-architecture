@@ -7,12 +7,12 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class ProductRepository : RepositoryBase, IProductRepository
     {
-        private readonly AppContext _context;
+        private readonly EntityDatabaseContext _context;
 
         public ProductRepository(string connectionString)
             : base(connectionString)
         {
-            _context = new AppContext(connectionString);
+            _context = new EntityDatabaseContext(connectionString);
         }
 
         public IEnumerable<Product> GetProducts()

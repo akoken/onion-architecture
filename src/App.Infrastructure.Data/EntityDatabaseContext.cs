@@ -3,9 +3,9 @@ using OnionArchitecture.Core.Domain;
 
 namespace OnionArchitecture.Infrastructure.Data
 {
-    public class AppContext : DbContext
+    public class EntityDatabaseContext : DbContext
     {
-        public AppContext(string connectionString) 
+        public EntityDatabaseContext(string connectionString) 
             : base(connectionString)
         {            
         }

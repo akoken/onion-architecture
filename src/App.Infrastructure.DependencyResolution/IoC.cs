@@ -12,7 +12,7 @@ namespace OnionArchitecture.Infrastructure.DependencyResolution
         {
             var container = new Container();
 
-            container.RegisterPerWebRequest<DbContext, AppContext>();
+            container.RegisterPerWebRequest<DbContext, EntityDatabaseContext>();
             container.Register<ICategoryRepository, CategoryRepository>();
             container.Register<IProductRepository, ProductRepository>();
                         

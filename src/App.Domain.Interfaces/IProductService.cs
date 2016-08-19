@@ -6,6 +6,6 @@ namespace OnionArchitecture.Core.DomainServices
     public interface IProductService
     {
         IEnumerable<Category> GetCategories();
-        IEnumerable<Product> GetProducts(int? categoryId);
+        IEnumerable<Product> GetProducts(int categoryId);
     }
 }
