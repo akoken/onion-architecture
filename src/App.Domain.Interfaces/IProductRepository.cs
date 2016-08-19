@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using App.Domain.Entities;
+using OnionArchitecture.Core.Domain;
 
-namespace App.Domain.Interfaces
+namespace OnionArchitecture.Core.Interfaces
 {
     public interface IProductRepository
     {

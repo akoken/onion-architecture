@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using App.Domain.Entities;
-using App.Domain.Interfaces;
-using App.Infrastructure.Data.Helpers;
-using App.Infrastructure.Interfaces;
+using OnionArchitecture.Core.Domain;
+using OnionArchitecture.Core.Interfaces;
+using OnionArchitecture.Infrastructure.Interfaces;
 
-namespace App.Infrastructure.Data.Repositories
+namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class CategoryRepository : RepositoryBase, ICategoryRepository
     {

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}</ProjectGuid>
+    <ProjectGuid>{68FBFD9A-36F5-4723-977E-C876434C09B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App.Infrastructure.DependencyResolution</RootNamespace>
-    <AssemblyName>App.Infrastructure.DependencyResolution</AssemblyName>
+    <RootNamespace>OnionArchitecture.Infrastructure.Data</RootNamespace>
+    <AssemblyName>OnionArchitecture.Infrastructure.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,19 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Castle.Windsor, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
-      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.3.7\lib\net45\NLog.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,29 +50,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityDatabaseContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NLog.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\App.Domain.Interfaces\App.Domain.Interfaces.csproj">
-      <Project>{D1BACFE9-12AF-4911-8D13-C54F79734065}</Project>
-      <Name>App.Domain.Interfaces</Name>
+    <ProjectReference Include="..\App.Domain.Entities\OnionArchitecture.Core.Domain.csproj">
+      <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>
+      <Name>OnionArchitecture.Core.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure.Data\App.Infrastructure.Data.csproj">
-      <Project>{68FBFD9A-36F5-4723-977E-C876434C09B5}</Project>
-      <Name>App.Infrastructure.Data</Name>
+    <ProjectReference Include="..\App.Domain.Interfaces\OnionArchitecture.Core.Interfaces.csproj">
+      <Project>{d1bacfe9-12af-4911-8d13-c54f79734065}</Project>
+      <Name>OnionArchitecture.Core.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure.Interfaces\App.Infrastructure.Interfaces.csproj">
+    <ProjectReference Include="..\App.Infrastructure.Interfaces\OnionArchitecture.Infrastructure.Interfaces.csproj">
       <Project>{b4ea4903-3c9d-4e86-95db-f705236aa18d}</Project>
-      <Name>App.Infrastructure.Interfaces</Name>
+      <Name>OnionArchitecture.Infrastructure.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure.Logging\App.Infrastructure.Logging.csproj">
-      <Project>{9e0999ac-c4cf-4dc1-a284-5630f9248540}</Project>
-      <Name>App.Infrastructure.Logging</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

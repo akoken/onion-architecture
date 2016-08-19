@@ -1,7 +1,7 @@
-﻿using App.Infrastructure.Interfaces;
-using System.Web;
+﻿using System.Web;
+using OnionArchitecture.Infrastructure.Interfaces;
 
-namespace App.Infrastructure.Caching
+namespace OnionArchitecture.Infrastructure.Caching
 {
     public class HttpContextCacheAdapter : ICacheService
     {

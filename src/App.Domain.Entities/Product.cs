@@ -1,4 +1,4 @@
-﻿namespace App.Domain.Entities
+﻿namespace OnionArchitecture.Core.Domain
 {
     public class Product
     {

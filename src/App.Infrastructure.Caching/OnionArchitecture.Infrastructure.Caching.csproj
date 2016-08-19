@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4700E1DD-F069-47F7-8AB9-69289665A852}</ProjectGuid>
+    <ProjectGuid>{A0655F71-7C19-4BA4-B6BC-8A3EA105AB6A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App.Domain.Entities</RootNamespace>
-    <AssemblyName>App.Domain.Entities</AssemblyName>
+    <RootNamespace>OnionArchitecture.Infrastructure.Caching</RootNamespace>
+    <AssemblyName>OnionArchitecture.Infrastructure.Caching</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="HttpContextCacheAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Infrastructure.Interfaces\OnionArchitecture.Infrastructure.Interfaces.csproj">
+      <Project>{B4EA4903-3C9D-4E86-95DB-F705236AA18D}</Project>
+      <Name>OnionArchitecture.Infrastructure.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

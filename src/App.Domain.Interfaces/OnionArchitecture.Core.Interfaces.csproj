@@ -7,8 +7,8 @@
     <ProjectGuid>{D1BACFE9-12AF-4911-8D13-C54F79734065}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App.Domain.Interfaces</RootNamespace>
-    <AssemblyName>App.Domain.Interfaces</AssemblyName>
+    <RootNamespace>OnionArchitecture.Core.Interfaces</RootNamespace>
+    <AssemblyName>OnionArchitecture.Core.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Domain.Entities\App.Domain.Entities.csproj">
+    <ProjectReference Include="..\App.Domain.Entities\OnionArchitecture.Core.Domain.csproj">
       <Project>{4700e1dd-f069-47f7-8ab9-69289665a852}</Project>
-      <Name>App.Domain.Entities</Name>
+      <Name>OnionArchitecture.Core.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿namespace App.Infrastructure.Interfaces
+﻿namespace OnionArchitecture.Infrastructure.Interfaces
 {
     public interface IConfigService
     {

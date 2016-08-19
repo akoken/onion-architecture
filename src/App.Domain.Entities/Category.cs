@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace App.Domain.Entities
+namespace OnionArchitecture.Core.Domain
 {
     public class Category
     {

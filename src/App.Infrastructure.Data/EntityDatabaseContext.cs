@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using App.Domain.Entities;
+using OnionArchitecture.Core.Domain;
 
-namespace App.Infrastructure.Data.Helpers
+namespace OnionArchitecture.Infrastructure.Data
 {
     public class AppContext : DbContext
     {

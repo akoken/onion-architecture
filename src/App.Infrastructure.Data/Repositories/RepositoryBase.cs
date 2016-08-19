@@ -1,4 +1,4 @@
-﻿namespace App.Infrastructure.Data.Repositories
+﻿namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class RepositoryBase
     {

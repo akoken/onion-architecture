@@ -1,10 +1,9 @@
-﻿using App.Domain.Entities;
-using App.Domain.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using App.Infrastructure.Data.Helpers;
+using OnionArchitecture.Core.Domain;
+using OnionArchitecture.Core.Interfaces;
 
-namespace App.Infrastructure.Data.Repositories
+namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class ProductRepository : RepositoryBase, IProductRepository
     {

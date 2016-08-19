@@ -1,7 +1,7 @@
-﻿using App.Domain.Entities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using OnionArchitecture.Core.Domain;
 
-namespace App.Services.Interfaces
+namespace OnionArchitecture.Services.Interfaces
 {
     public interface IProductService
     {

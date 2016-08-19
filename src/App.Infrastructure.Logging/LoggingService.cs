@@ -1,8 +1,8 @@
 ﻿using System;
-using App.Infrastructure.Interfaces;
 using NLog;
+using OnionArchitecture.Infrastructure.Interfaces;
 
-namespace App.Infrastructure.Logging
+namespace OnionArchitecture.Infrastructure.Logging
 {
     public class LoggingService : Logger, ILoggingService
     {
