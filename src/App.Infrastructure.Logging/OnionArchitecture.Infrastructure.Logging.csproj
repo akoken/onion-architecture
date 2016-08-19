@@ -52,9 +52,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Infrastructure.Interfaces\OnionArchitecture.Infrastructure.Interfaces.csproj">
-      <Project>{b4ea4903-3c9d-4e86-95db-f705236aa18d}</Project>
-      <Name>OnionArchitecture.Infrastructure.Interfaces</Name>
+    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationServices.csproj">
+      <Project>{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}</Project>
+      <Name>OnionArchitecture.Core.ApplicationServices</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

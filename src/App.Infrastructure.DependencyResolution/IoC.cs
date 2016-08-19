@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using OnionArchitecture.Core.Interfaces;
+using OnionArchitecture.Core.DomainServices;
 using OnionArchitecture.Infrastructure.Data;
 using OnionArchitecture.Infrastructure.Data.Repositories;
 using SimpleInjector;

@@ -1,5 +1,5 @@
-﻿using System.Web;
-using OnionArchitecture.Infrastructure.Interfaces;
+﻿using OnionArchitecture.Core.ApplicationServices;
+using System.Web;
 
 namespace OnionArchitecture.Infrastructure.Caching
 {

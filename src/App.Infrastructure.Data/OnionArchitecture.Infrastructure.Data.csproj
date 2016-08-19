@@ -61,13 +61,13 @@
       <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>
       <Name>OnionArchitecture.Core.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Domain.Interfaces\OnionArchitecture.Core.Interfaces.csproj">
+    <ProjectReference Include="..\App.Domain.Interfaces\OnionArchitecture.Core.DomainServices.csproj">
       <Project>{d1bacfe9-12af-4911-8d13-c54f79734065}</Project>
-      <Name>OnionArchitecture.Core.Interfaces</Name>
+      <Name>OnionArchitecture.Core.DomainServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure.Interfaces\OnionArchitecture.Infrastructure.Interfaces.csproj">
-      <Project>{b4ea4903-3c9d-4e86-95db-f705236aa18d}</Project>
-      <Name>OnionArchitecture.Infrastructure.Interfaces</Name>
+    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationServices.csproj">
+      <Project>{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}</Project>
+      <Name>OnionArchitecture.Core.ApplicationServices</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 using NLog;
-using OnionArchitecture.Infrastructure.Interfaces;
+using OnionArchitecture.Core.ApplicationServices;
 
 namespace OnionArchitecture.Infrastructure.Logging
 {

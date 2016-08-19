@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using OnionArchitecture.Core.Domain;
-using OnionArchitecture.Core.Interfaces;
-using OnionArchitecture.Infrastructure.Interfaces;
+using OnionArchitecture.Core.DomainServices;
+using OnionArchitecture.Core.ApplicationServices;
 
 namespace OnionArchitecture.Infrastructure.Data.Repositories
 {

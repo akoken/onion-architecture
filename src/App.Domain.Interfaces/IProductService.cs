@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using OnionArchitecture.Core.Domain;
 
-namespace OnionArchitecture.Services.Interfaces
+namespace OnionArchitecture.Core.DomainServices
 {
     public interface IProductService
     {

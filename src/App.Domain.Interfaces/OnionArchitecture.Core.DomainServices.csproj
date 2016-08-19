@@ -7,8 +7,8 @@
     <ProjectGuid>{D1BACFE9-12AF-4911-8D13-C54F79734065}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OnionArchitecture.Core.Interfaces</RootNamespace>
-    <AssemblyName>OnionArchitecture.Core.Interfaces</AssemblyName>
+    <RootNamespace>OnionArchitecture.Core.DomainServices</RootNamespace>
+    <AssemblyName>OnionArchitecture.Core.DomainServices</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ICategoryRepository.cs" />
     <Compile Include="IProductRepository.cs" />
+    <Compile Include="IProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
