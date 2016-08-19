@@ -46,7 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Domain.Entities\OnionArchitecture.Core.Domain.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj">
       <Project>{4700e1dd-f069-47f7-8ab9-69289665a852}</Project>
       <Name>OnionArchitecture.Core.Domain</Name>
     </ProjectReference>

@@ -55,22 +55,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Domain.Entities\OnionArchitecture.Core.Domain.csproj">
-      <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>
-      <Name>OnionArchitecture.Core.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Domain.Interfaces\OnionArchitecture.Core.DomainServices.csproj">
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainServices.csproj">
       <Project>{D1BACFE9-12AF-4911-8D13-C54F79734065}</Project>
       <Name>OnionArchitecture.Core.DomainServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\App.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj">
+      <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>
+      <Name>OnionArchitecture.Core.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj">
       <Project>{68FBFD9A-36F5-4723-977E-C876434C09B5}</Project>
       <Name>OnionArchitecture.Infrastructure.Data</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

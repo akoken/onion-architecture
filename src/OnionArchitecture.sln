@@ -5,19 +5,19 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B77731DA-ABB8-4516-86A9-C0D8BCAEEBCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Core.DomainServices", "App.Domain.Interfaces\OnionArchitecture.Core.DomainServices.csproj", "{D1BACFE9-12AF-4911-8D13-C54F79734065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Core.DomainServices", "OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainServices.csproj", "{D1BACFE9-12AF-4911-8D13-C54F79734065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Core.Domain", "App.Domain.Entities\OnionArchitecture.Core.Domain.csproj", "{4700E1DD-F069-47F7-8AB9-69289665A852}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Core.Domain", "OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj", "{4700E1DD-F069-47F7-8AB9-69289665A852}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4243A5A6-B1FF-4805-AD25-953843E165C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Data", "App.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj", "{68FBFD9A-36F5-4723-977E-C876434C09B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Data", "OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj", "{68FBFD9A-36F5-4723-977E-C876434C09B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.DependencyResolution", "App.Infrastructure.DependencyResolution\OnionArchitecture.Infrastructure.DependencyResolution.csproj", "{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.DependencyResolution", "OnionArchitecture.Infrastructure.DependencyResolution\OnionArchitecture.Infrastructure.DependencyResolution.csproj", "{E8DF2DAF-3E05-44FB-9ACE-3A2C79A73223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Logging", "App.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.csproj", "{9E0999AC-C4CF-4DC1-A284-5630F9248540}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Logging", "OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.csproj", "{9E0999AC-C4CF-4DC1-A284-5630F9248540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Caching", "App.Infrastructure.Caching\OnionArchitecture.Infrastructure.Caching.csproj", "{A0655F71-7C19-4BA4-B6BC-8A3EA105AB6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Infrastructure.Caching", "OnionArchitecture.Infrastructure.Caching\OnionArchitecture.Infrastructure.Caching.csproj", "{A0655F71-7C19-4BA4-B6BC-8A3EA105AB6A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionArchitecture.Core.ApplicationServices", "OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationServices.csproj", "{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}"
 EndProject
