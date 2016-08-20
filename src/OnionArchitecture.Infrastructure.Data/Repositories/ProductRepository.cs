@@ -1,16 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using OnionArchitecture.Core.Domain;
-using OnionArchitecture.Core.DomainServices;
+using OnionArchitecture.Core.DomainService;
 
 namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
-    public class ProductRepository : RepositoryBase, IProductRepository
+    public class ProductRepository : IProductRepository
     {
         private readonly EntityDatabaseContext _context;
 
         public ProductRepository(string connectionString)
-            : base(connectionString)
         {
             _context = new EntityDatabaseContext(connectionString);
         }

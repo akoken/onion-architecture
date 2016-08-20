@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}</ProjectGuid>
+    <ProjectGuid>{CB2C8712-6B1E-4837-9B4C-1A1190B47749}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OnionArchitecture.Core.ApplicationServices</RootNamespace>
-    <AssemblyName>OnionArchitecture.Core.ApplicationServices</AssemblyName>
+    <RootNamespace>OnionArchitecture.Core.Repository</RootNamespace>
+    <AssemblyName>OnionArchitecture.Core.Repository</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICacheService.cs" />
-    <Compile Include="IConfigService.cs" />
-    <Compile Include="ILoggingService.cs" />
+    <Compile Include="ICategoryRepository.cs" />
+    <Compile Include="IProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

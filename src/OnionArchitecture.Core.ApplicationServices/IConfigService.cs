@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Core.ApplicationServices
+﻿namespace OnionArchitecture.Core.ApplicationService
 {
     public interface IConfigService
     {

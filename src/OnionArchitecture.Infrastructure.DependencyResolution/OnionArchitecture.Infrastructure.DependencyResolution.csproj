@@ -82,9 +82,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainServices.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainService.csproj">
       <Project>{D1BACFE9-12AF-4911-8D13-C54F79734065}</Project>
-      <Name>OnionArchitecture.Core.DomainServices</Name>
+      <Name>OnionArchitecture.Core.DomainService</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj">
       <Project>{68FBFD9A-36F5-4723-977E-C876434C09B5}</Project>

@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
+using OnionArchitecture.Core.DomainService;
 using SimpleInjector;
 using OnionArchitecture.Infrastructure.Data;
-using OnionArchitecture.Core.DomainServices;
 using OnionArchitecture.Infrastructure.Data.Repositories;
 
 namespace OnionArchitecture.Infrastructure.DependencyResolution

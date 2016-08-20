@@ -7,8 +7,8 @@
     <ProjectGuid>{5C0532C7-77BA-4321-9FC6-AA656570F05B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OnionArchitecture.Infrastructure.Services</RootNamespace>
-    <AssemblyName>OnionArchitecture.Infrastructure.Services</AssemblyName>
+    <RootNamespace>OnionArchitecture.Infrastructure.Service</RootNamespace>
+    <AssemblyName>OnionArchitecture.Infrastructure.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainServices.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainService.csproj">
       <Project>{D1BACFE9-12AF-4911-8D13-C54F79734065}</Project>
-      <Name>OnionArchitecture.Core.DomainServices</Name>
+      <Name>OnionArchitecture.Core.DomainService</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj">
       <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>

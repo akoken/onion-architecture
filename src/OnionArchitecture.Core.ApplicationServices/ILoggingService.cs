@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OnionArchitecture.Core.ApplicationServices
+namespace OnionArchitecture.Core.ApplicationService
 {
     public interface ILoggingService
     {

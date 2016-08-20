@@ -56,20 +56,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
-    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationServices.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationService.csproj">
       <Project>{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}</Project>
-      <Name>OnionArchitecture.Core.ApplicationServices</Name>
+      <Name>OnionArchitecture.Core.ApplicationService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainServices.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.DomainServices\OnionArchitecture.Core.DomainService.csproj">
       <Project>{D1BACFE9-12AF-4911-8D13-C54F79734065}</Project>
-      <Name>OnionArchitecture.Core.DomainServices</Name>
+      <Name>OnionArchitecture.Core.DomainService</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj">
       <Project>{4700E1DD-F069-47F7-8AB9-69289665A852}</Project>

@@ -1,18 +1,17 @@
-﻿using OnionArchitecture.Core.ApplicationServices;
-using OnionArchitecture.Core.Domain;
-using OnionArchitecture.Core.DomainServices;
+﻿using OnionArchitecture.Core.Domain;
 using System.Collections.Generic;
 using System.Linq;
+using OnionArchitecture.Core.ApplicationService;
+using OnionArchitecture.Core.DomainService;
 
 namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
-    public class CategoryRepository : RepositoryBase, ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly EntityDatabaseContext _context;
         private readonly ILoggingService _loggingService;
 
-        public CategoryRepository(string connectionString, ILoggingService loggingService) 
-            : base(connectionString)
+        public CategoryRepository(string connectionString, ILoggingService loggingService)           
         {
             _context = new EntityDatabaseContext(connectionString);
             _loggingService = loggingService;
@@ -23,8 +22,7 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
             var categories = (from c in _context.Categories
                               orderby c.CategoryName
                               select c).ToList();
-
-            // Log call
+            
             _loggingService.Trace("App.Infrastructure.Data: CategoryRepository.GetCategories");
 
             return categories;

@@ -1,11 +1,11 @@
-﻿using OnionArchitecture.Core.Domain;
-using OnionArchitecture.Core.DomainServices;
-using OnionArchitecture.Infrastructure.Data;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using OnionArchitecture.Core.Domain;
+using OnionArchitecture.Core.DomainService;
+using OnionArchitecture.Infrastructure.Data;
 
-namespace OnionArchitecture.Infrastructure.Services
+namespace OnionArchitecture.Infrastructure.Service
 {
     public class ProductService : IProductService
     {

@@ -45,9 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationServices.csproj">
+    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationServices\OnionArchitecture.Core.ApplicationService.csproj">
       <Project>{68401EEC-0FC9-4C7D-A54F-6AEE153F41CD}</Project>
-      <Name>OnionArchitecture.Core.ApplicationServices</Name>
+      <Name>OnionArchitecture.Core.ApplicationService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
