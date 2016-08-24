@@ -6,7 +6,7 @@ using OnionArchitecture.Infrastructure.Data.Repositories;
 
 namespace OnionArchitecture.Infrastructure.DependencyResolution
 {
-    public class IoC
+    public class Bootstrapper
     {
         public static Container Register()
         {
