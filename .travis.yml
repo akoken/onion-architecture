@@ -56,5 +56,5 @@ install:
   - dotnet restore
   
   #Build
-  - dotnet build -c $CONFIGURATION -f $FRAMEWORK ./src/OnionArchitecture.Core.Domain/OnionArchitecture.Core.Domain.xproj
+  - dotnet build -c $CONFIGURATION -f $FRAMEWORK src/OnionArchitecture.Core.Domain/
 
