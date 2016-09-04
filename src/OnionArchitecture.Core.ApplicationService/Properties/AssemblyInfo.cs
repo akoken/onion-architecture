@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OnionArchitecture.Infrastructure.Data")]
+[assembly: AssemblyProduct("OnionArchitecture.Core.ApplicationService")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c123628e-bbb6-4874-b90a-84d02d7f50a6")]
+[assembly: Guid("61ddebf9-242c-4f96-9979-516824ef7f1f")]
