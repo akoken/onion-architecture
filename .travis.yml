@@ -1,5 +1,10 @@
 language: csharp
-
+dist: trusty
+os:
+  - linux
+  # - osx CoreCLR does not support OS X 10.9 (yet)
+mono:
+  - beta
 addons:
   apt:
     packages:
@@ -9,52 +14,16 @@ addons:
     - libssl-dev
     - libunwind8
     - zlib1g
-
-matrix:
-  include:
-    - os: linux
-      dist: trusty # Ubuntu 14.04
-      sudo: required
-      env: CONFIGURATION=Debug FRAMEWORK=netcoreapp1.0
-    - os: linux
-      dist: trusty
-      sudo: required
-      env: CONFIGURATION=Release FRAMEWORK=netcoreapp1.0
-
-before_install:
-  # Install OpenSSL
-  - if test "$TRAVIS_OS_NAME" == "osx"; then
-      brew install openssl;
-      brew link --force openssl;
-      export DOTNET_SDK_URL="https://go.microsoft.com/fwlink/?LinkID=809128";
-    else
-      export DOTNET_SDK_URL="https://go.microsoft.com/fwlink/?LinkID=809129";
-    fi
-
-  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
-
-  # Install .NET CLI
-  - mkdir $DOTNET_INSTALL_DIR
-  - curl -L $DOTNET_SDK_URL -o dotnet_package
-  - tar -xvzf dotnet_package -C $DOTNET_INSTALL_DIR
-
-  # Add dotnet to PATH
-  - export PATH="$DOTNET_INSTALL_DIR:$PATH"
-
-install:
-  # Display dotnet version info
-  - which dotnet;
-    if [ $? -eq 0 ]; then
-      echo "Using dotnet:";
-      dotnet --info;
-    else
-      echo "dotnet.exe not found"
-      exit 1;
-    fi
-
-  # Restore dependencies
-  - dotnet restore
-  
-  #Build
-  - dotnet build -c $CONFIGURATION -f $FRAMEWORK src/OnionArchitecture.Core.Domain/
-
+env:
+  global:
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+branches:
+  only:
+    - master    
+script:
+  - ./build/build.sh --quiet verify
+notifications:  
+  on_success: always
+  on_failure: always
+  on_start: always
