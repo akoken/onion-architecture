@@ -1,4 +1,4 @@
 # Onion Architecture
-[![Build Status](https://travis-ci.org/akoken/onion-architecture.svg?branch=master)](https://travis-ci.org/akoken/onion-architecture)
+[![Build status](https://ci.appveyor.com/api/projects/status/iddro74s87s9ol50?svg=true)](https://ci.appveyor.com/project/akoken/onion-architecture)
 
 Onion Architecture Sample Application
