@@ -14,12 +14,14 @@ build_script:
 - dotnet build "src\OnionArchitecture.Core.Domain" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.Core.DomainService" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.Core.ApplicationService" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
+- dotnet build "src\OnionArchitecture.Infrastructure.Logging" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.Infrastructure.Data" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.Infrastructure.Service" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 after_build:
 - dotnet pack "src\OnionArchitecture.Core.Domain" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
 - dotnet pack "src\OnionArchitecture.Core.DomainService" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
 - dotnet pack "src\OnionArchitecture.Core.ApplicationService" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
+- dotnet pack "src\OnionArchitecture.Infrastructure.Logging" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
 - dotnet pack "src\OnionArchitecture.Infrastructure.Data" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
 - dotnet pack "src\OnionArchitecture.Infrastructure.Service" -c %CONFIGURATION% --no-build --version-suffix %LABEL% -o artifacts
 artifacts:
