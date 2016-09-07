@@ -24,7 +24,7 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
                               orderby c.CategoryName
                               select c).ToList();
 
-            _loggingService.Trace("App.Infrastructure.Data: CategoryRepository.GetCategories");
+            _loggingService.Information("App.Infrastructure.Data: CategoryRepository.GetCategories");
 
             return categories;
         }
