@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Data", "src\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.xproj", "{C123628E-BBB6-4874-B90A-84D02D7F50A6}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Logging", "OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.xproj", "{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Logging", "src\OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.xproj", "{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
