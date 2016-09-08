@@ -9,12 +9,12 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
 {
     public class CategoryRepository : ICategoryRepository
     {
-        private readonly ProductStoreContext _context;
+        private readonly StoreContext _context;
         private readonly ILoggingService _loggingService;
 
         public CategoryRepository(ILoggingService loggingService)
         {
-            _context = new ProductStoreContext();
+            _context = new StoreContext();
             _loggingService = loggingService;
         }
 
@@ -24,7 +24,7 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
                               orderby c.CategoryName
                               select c).ToList();
 
-            _loggingService.Information("App.Infrastructure.Data: CategoryRepository.GetCategories");
+            _loggingService.Information("OnionArchitecture.Infrastructure.Data: CategoryRepository.GetCategories");
 
             return categories;
         }

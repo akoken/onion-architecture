@@ -17,12 +17,12 @@ namespace OnionArchitecture.Infrastructure.Service
         }
         public IEnumerable<Category> GetCategories()
         {
-            return ((ProductStoreContext)_context).Categories.ToList();
+            return ((StoreContext)_context).Categories.ToList();
         }
 
         public IEnumerable<Product> GetProducts(int categoryId)
         {
-            return ((ProductStoreContext)_context).Products.Where(p => p.Category.CategoryId == categoryId).ToList();
+            return ((StoreContext)_context).Products.Where(p => p.Category.CategoryId == categoryId).ToList();
         }
     }
 }

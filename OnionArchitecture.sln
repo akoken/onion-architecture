@@ -24,6 +24,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastru
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Logging", "src\OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.xproj", "{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyResolution", "DependencyResolution", "{9A72B770-9C87-4AFA-A434-24AC38CD6ABE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.DependencyResolution", "OnionArchitecture.DependencyResolution\OnionArchitecture.DependencyResolution.xproj", "{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +58,10 @@ Global
 		{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +73,6 @@ Global
 		{079E0978-EF5F-430F-8F4D-DF40B960A6E2} = {4CF8ADC5-7BB5-4BE2-9674-265751B0854E}
 		{C123628E-BBB6-4874-B90A-84D02D7F50A6} = {4CF8ADC5-7BB5-4BE2-9674-265751B0854E}
 		{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14} = {4CF8ADC5-7BB5-4BE2-9674-265751B0854E}
+		{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E} = {9A72B770-9C87-4AFA-A434-24AC38CD6ABE}
 	EndGlobalSection
 EndGlobal
