@@ -22,7 +22,7 @@ namespace OnionArchitecture.Infrastructure.Service
 
         public IEnumerable<Product> GetProducts(int categoryId)
         {
-            return ((StoreContext)_context).Products.Where(p => p.Category.CategoryId == categoryId).ToList();
+            return ((StoreContext)_context).Products.Where(p => p.CategoryId == categoryId).ToList();
         }
     }
 }

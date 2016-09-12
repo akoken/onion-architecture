@@ -26,7 +26,7 @@ namespace OnionArchitecture.Infrastructure.Data.Repositories
         public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
         {
             _loggingService.Information("OnionArchitecture.Infrastructure.Data: ProductRepository.GetProductsByCategoryId");
-            return _context.Products.Where(p => p.Category.CategoryId == categoryId);
+            return _context.Products.Where(p => p.CategoryId == categoryId);
         }
     }
 }
