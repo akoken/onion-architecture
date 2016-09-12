@@ -30,7 +30,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Dependenc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2949E672-3B49-4186-A3C6-BE4E5D60F08F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Core.Tests", "OnionArchitecture.Core.Tests\OnionArchitecture.Core.Tests.xproj", "{A6F70725-F317-42B4-A613-D18422A30074}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Core.Tests", "test\OnionArchitecture.Core.Tests\OnionArchitecture.Core.Tests.xproj", "{A6F70725-F317-42B4-A613-D18422A30074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
