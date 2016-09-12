@@ -18,6 +18,6 @@ build_script:
 - dotnet build "src\OnionArchitecture.Infrastructure.Service" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.DependencyResolution" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 test_script:
-- dotnet test "test\OnionArchitecture.Tests" -c %CONFIGURATION%
+- dotnet test "test\OnionArchitecture.Core.Tests" -c %CONFIGURATION%
 cache:
 - '%USERPROFILE%\.nuget\packages'
