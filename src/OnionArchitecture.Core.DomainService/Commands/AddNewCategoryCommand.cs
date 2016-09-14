@@ -1,4 +1,5 @@
 ﻿using OnionArchitecture.Core.Domain;
+using OnionArchitecture.Core.DomainService.CommandCore;
 
 namespace OnionArchitecture.Core.DomainService.Commands
 {

@@ -9,7 +9,8 @@
     },
     "OnionArchitecture.Core.ApplicationService": "1.0.0-*",
     "OnionArchitecture.Core.Domain": "1.0.0-*",
-"OnionArchitecture.Core.DomainService": "1.0.0-*"
+    "OnionArchitecture.Core.DomainService": "1.0.0-*",
+    "System.Data.Common": "4.1.0"
   },
 
   "frameworks": {

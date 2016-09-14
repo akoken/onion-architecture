@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Core.DomainService
+﻿namespace OnionArchitecture.Core.DomainService.CommandCore
 {
     public interface ICommandValidator
     {
@@ -6,6 +6,5 @@
     }
 
     public interface ICommandValidator<TCommand> : ICommandValidator where TCommand : ICommand
-    {
-    }
+    { }
 }

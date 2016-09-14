@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnionArchitecture.Core.DomainService
+namespace OnionArchitecture.Core.DomainService.CommandCore
 {
     public class CommandValidationException : Exception
     {
