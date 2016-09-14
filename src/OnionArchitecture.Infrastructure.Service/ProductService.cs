@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnionArchitecture.Core.Domain;
-using OnionArchitecture.Core.DomainService;
 using OnionArchitecture.Infrastructure.Data.EntityFramework;
 using System.Collections.Generic;
 using System.Linq;
+using OnionArchitecture.Core.DomainService.Services;
 
 namespace OnionArchitecture.Infrastructure.Service
 {

@@ -3,9 +3,9 @@ using OnionArchitecture.Core.Domain;
 
 namespace OnionArchitecture.Infrastructure.Data.EntityFramework
 {
-    public class StoreContext : DbContext
+    public class StoreContext : DbContext, IStoreContext
     {
         public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }        
     }
 }
