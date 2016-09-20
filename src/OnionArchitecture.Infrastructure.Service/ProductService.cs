@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OnionArchitecture.Core.Domain;
+﻿using OnionArchitecture.Core.Domain;
 using OnionArchitecture.Infrastructure.Data.EntityFramework;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,20 +8,20 @@ namespace OnionArchitecture.Infrastructure.Service
 {
     public class ProductService : IProductService
     {
-        private readonly DbContext _context;
+        private readonly IStoreContext _storeContext;
 
-        public ProductService(DbContext context)
+        public ProductService(IStoreContext storeContext)
         {
-            _context = context;
+            _storeContext = storeContext;
         }
         public IEnumerable<Category> GetCategories()
         {
-            return ((StoreContext)_context).Categories.ToList();
+            return _storeContext.Categories.ToList();
         }
 
         public IEnumerable<Product> GetProducts(int categoryId)
         {
-            return ((StoreContext)_context).Products.Where(p => p.CategoryId == categoryId).ToList();
+            return _storeContext.Products.Where(p => p.CategoryId == categoryId).ToList();
         }
     }
 }
