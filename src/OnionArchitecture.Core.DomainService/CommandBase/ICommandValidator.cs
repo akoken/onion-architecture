@@ -1,4 +1,6 @@
-﻿namespace OnionArchitecture.Core.DomainService.CommandCore
+﻿using OnionArchitecture.Core.DomainService.Validations;
+
+namespace OnionArchitecture.Core.DomainService.CommandBase
 {
     public interface ICommandValidator
     {

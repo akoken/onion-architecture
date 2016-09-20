@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OnionArchitecture.Core.DomainService.CommandCore
+namespace OnionArchitecture.Core.DomainService.CommandBase
 {
     public interface ICommandExecutor
     {

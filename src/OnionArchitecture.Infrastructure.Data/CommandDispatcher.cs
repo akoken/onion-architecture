@@ -1,5 +1,5 @@
 ﻿using System;
-using OnionArchitecture.Core.DomainService.CommandCore;
+using OnionArchitecture.Core.DomainService.CommandBase;
 
 namespace OnionArchitecture.Infrastructure.Data
 {

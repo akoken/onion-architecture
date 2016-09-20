@@ -1,4 +1,4 @@
-﻿using OnionArchitecture.Core.DomainService.CommandCore;
+﻿using OnionArchitecture.Core.DomainService.CommandBase;
 using OnionArchitecture.Core.DomainService.Commands;
 using OnionArchitecture.Infrastructure.Data.EntityFramework;
 

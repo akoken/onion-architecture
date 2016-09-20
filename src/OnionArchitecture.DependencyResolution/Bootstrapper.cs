@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnionArchitecture.Core.ApplicationService;
-using OnionArchitecture.Core.DomainService.CommandCore;
+using OnionArchitecture.Core.DomainService.CommandBase;
 using OnionArchitecture.Core.DomainService.Services;
 using OnionArchitecture.Infrastructure.Data;
 using OnionArchitecture.Infrastructure.Data.EntityFramework;

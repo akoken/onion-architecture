@@ -1,4 +1,4 @@
-﻿namespace OnionArchitecture.Core.DomainService.CommandCore
+﻿namespace OnionArchitecture.Core.DomainService.CommandBase
 {
     public interface ICommandHandler
     {

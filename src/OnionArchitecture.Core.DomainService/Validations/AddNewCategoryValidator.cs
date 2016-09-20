@@ -1,4 +1,4 @@
-﻿using OnionArchitecture.Core.DomainService.CommandCore;
+﻿using OnionArchitecture.Core.DomainService.CommandBase;
 using OnionArchitecture.Core.DomainService.Commands;
 
 namespace OnionArchitecture.Core.DomainService.Validations
