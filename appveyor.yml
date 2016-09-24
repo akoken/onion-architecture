@@ -17,6 +17,7 @@ build_script:
 - dotnet build "src\OnionArchitecture.Infrastructure.Data" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.Infrastructure.Service" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 - dotnet build "src\OnionArchitecture.DependencyResolution" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
+- dotnet build "src\OnionArchitecture.UI.Web" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
 test_script:
 - dotnet test "test\OnionArchitecture.Infrastructure.Tests" -c %CONFIGURATION%
 cache:
