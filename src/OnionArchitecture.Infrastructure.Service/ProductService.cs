@@ -16,7 +16,27 @@ namespace OnionArchitecture.Infrastructure.Service
         }
         public IEnumerable<Category> GetCategories()
         {
-            return _storeContext.Categories.ToList();
+            var categories = new List<Category>
+            {
+                new Category
+                {
+                    CategoryId = 1,
+                    CategoryName = "Software Architecture"
+                },
+                new Category
+                {
+                    CategoryId = 2,
+                    CategoryName = "Mobile Programming"
+                },
+                new Category
+                {
+                    CategoryId = 3,
+                    CategoryName = "Cloud Computing"
+                }
+            };
+
+            return categories;
+            //return _storeContext.Categories.ToList();
         }
 
         public IEnumerable<Product> GetProducts(int categoryId)

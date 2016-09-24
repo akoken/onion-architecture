@@ -4,7 +4,7 @@ using OnionArchitecture.Core.Domain;
 namespace OnionArchitecture.Infrastructure.Data.EntityFramework
 {
     public class StoreContext : DbContext, IStoreContext
-    {
+    {     
         public StoreContext(DbContextOptions options) : base(options)
         {
         }
