@@ -2,17 +2,16 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Microsoft.EntityFrameworkCore": "1.0.0",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0"
-    },
+    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "Microsoft.NETCore.App": "1.0.1",
     "OnionArchitecture.Core.ApplicationService": "1.0.0-*",
     "OnionArchitecture.Core.DomainService": "1.0.0-*",
     "OnionArchitecture.Infrastructure.Data": "1.0.0-*",
     "OnionArchitecture.Infrastructure.Logging": "1.0.0-*",
     "OnionArchitecture.Infrastructure.Service": "1.0.0-*",
-    "SimpleInjector": "3.2.2"
+    "SimpleInjector": "3.2.2",
+    "SimpleInjector.Integration.AspNetCore": "3.2.1",
+    "SimpleInjector.Integration.AspNetCore.Mvc": "3.2.3"
   },
 
   "frameworks": {
