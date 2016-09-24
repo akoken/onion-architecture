@@ -34,7 +34,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9FDC61D1-C9B1-4728-9D8E-DA0E77C7F479}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.UI.Web", "OnionArchitecture.UI.Web\OnionArchitecture.UI.Web.xproj", "{3ADF5326-3FD7-4337-86E7-F3CFB6E52EA5}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.UI.Web", "src\OnionArchitecture.UI.Web\OnionArchitecture.UI.Web.xproj", "{3ADF5326-3FD7-4337-86E7-F3CFB6E52EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
