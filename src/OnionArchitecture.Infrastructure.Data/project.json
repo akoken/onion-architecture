@@ -2,11 +2,9 @@
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Microsoft.EntityFrameworkCore": "1.0.0",
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0"
-    },
+    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.1",
+    "Microsoft.NETCore.App": "1.0.1",
     "OnionArchitecture.Core.ApplicationService": "1.0.0-*",
     "OnionArchitecture.Core.Domain": "1.0.0-*",
     "OnionArchitecture.Core.DomainService": "1.0.0-*",
