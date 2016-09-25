@@ -16,6 +16,7 @@ namespace OnionArchitecture.DependencyResolution
         {
             var container = new Container();
             var optionBuilder = new DbContextOptionsBuilder<StoreContext>();
+            optionBuilder.UseSqlite("Filename=Store.db");
 
             container.Register<IStoreContext>(() => new StoreContext(optionBuilder.Options));
             container.Register<ICommandDispatcher, CommandDispatcher>();

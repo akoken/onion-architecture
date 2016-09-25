@@ -15,7 +15,7 @@ namespace OnionArchitecture.Infrastructure.Tests
         {
             var db = new DbContextOptionsBuilder<StoreContext>();
             db.UseInMemoryDatabase();
-            _storeContext = new StoreContext(db.Options);
+            _storeContext = new StoreContext(db.Options);            
         }
 
         [Fact]

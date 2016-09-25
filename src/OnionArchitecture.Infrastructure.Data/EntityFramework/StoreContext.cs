@@ -3,18 +3,13 @@ using OnionArchitecture.Core.Domain;
 
 namespace OnionArchitecture.Infrastructure.Data.EntityFramework
 {
-    public class StoreContext : DbContext, IStoreContext
+    public sealed class StoreContext : DbContext, IStoreContext
     {     
         public StoreContext(DbContextOptions options) : base(options)
-        {
+        {            
         }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Filename=./StoreDB.db");
-        }
+        public DbSet<Category> Categories { get; set; }     
     }
 }
