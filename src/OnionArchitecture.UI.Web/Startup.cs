@@ -14,7 +14,7 @@ namespace OnionArchitecture.UI.Web
 {
     public class Startup
     {
-        private Container container;
+        private Container _container;
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -30,10 +30,10 @@ namespace OnionArchitecture.UI.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            container = DependencyResolver.CreateContainer();
+            _container = DependencyResolver.CreateContainer();
             // Add framework services.
-            services.AddSingleton<IControllerActivator>(new SimpleInjectorControllerActivator(container));
-            services.AddMvc();
+            services.AddSingleton<IControllerActivator>(new SimpleInjectorControllerActivator(_container));
+            services.AddMvc();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +42,7 @@ namespace OnionArchitecture.UI.Web
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseSimpleInjectorAspNetRequestScoping(container);
+            app.UseSimpleInjectorAspNetRequestScoping(_container);
 
             app.UseStaticFiles();
 
