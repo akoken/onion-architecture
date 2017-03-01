@@ -15,7 +15,7 @@ namespace OnionArchitecture.Infrastructure.Tests
         {
             var db = new DbContextOptionsBuilder<StoreContext>();
             db.UseInMemoryDatabase();
-            _storeContext = new StoreContext(db.Options);            
+            _storeContext = new StoreContext(db.Options);
         }
 
         [Fact]
@@ -42,7 +42,7 @@ namespace OnionArchitecture.Infrastructure.Tests
 
             var query = new GetCategoriesQuery(_storeContext);
             var categories = query.GetCategories();
-            
+
             Assert.NotNull(categories);
             Assert.True(categories.Count() == 2);
         }

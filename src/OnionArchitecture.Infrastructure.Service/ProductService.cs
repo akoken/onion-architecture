@@ -15,7 +15,7 @@ namespace OnionArchitecture.Infrastructure.Service
             _storeContext = storeContext;
         }
         public IEnumerable<Category> GetCategories()
-        {                       
+        {
             return _storeContext.Categories.ToList();
         }
 

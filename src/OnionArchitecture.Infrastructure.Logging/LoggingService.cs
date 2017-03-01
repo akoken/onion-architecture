@@ -21,7 +21,7 @@ namespace OnionArchitecture.Infrastructure.Logging
         public void Information(string information)
         {
             Log.Information(information);
-        }    
+        }
 
         public void Warning(string warningMessage)
         {

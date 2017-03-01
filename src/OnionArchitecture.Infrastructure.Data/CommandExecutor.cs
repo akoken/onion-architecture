@@ -4,11 +4,11 @@ using OnionArchitecture.Core.DomainService.CommandBase;
 namespace OnionArchitecture.Infrastructure.Data
 {
     public class CommandExecutor : ICommandExecutor
-    {        
+    {
         private readonly ICommandDispatcher _dispatcher;
 
         public CommandExecutor(ICommandDispatcher dispatcher)
-        {            
+        {
             _dispatcher = dispatcher;
         }
         public void Execute(IEnumerable<ICommand> commands)

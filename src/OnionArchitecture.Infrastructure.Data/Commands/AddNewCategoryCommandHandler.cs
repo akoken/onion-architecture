@@ -6,9 +6,9 @@ namespace OnionArchitecture.Infrastructure.Data.Commands
 {
     public class AddNewCategoryCommandHandler : ICommandHandler<AddNewCategoryCommand>
     {
-        private readonly IStoreContext _storeContext;        
+        private readonly IStoreContext _storeContext;
         public AddNewCategoryCommandHandler(IStoreContext context)
-        {            
+        {
             _storeContext = context;
         }
 
@@ -16,6 +16,6 @@ namespace OnionArchitecture.Infrastructure.Data.Commands
         {
             var command = (AddNewCategoryCommand) commandObj;
             _storeContext.Categories.Add(command.Category);
-        }           
+        }
     }
 }

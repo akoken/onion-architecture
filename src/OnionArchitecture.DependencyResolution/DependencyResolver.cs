@@ -10,8 +10,8 @@ using SimpleInjector;
 
 namespace OnionArchitecture.DependencyResolution
 {
-    public class DependencyResolver 
-    {       
+    public class DependencyResolver
+    {
         public static Container CreateContainer()
         {
             var container = new Container();

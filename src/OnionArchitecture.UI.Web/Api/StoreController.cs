@@ -19,7 +19,7 @@ namespace OnionArchitecture.UI.Web.Api
         [Produces(typeof(string[]))]
         public IActionResult Get()
         {
-            var categories =_productService.GetCategories();            
+            var categories =_productService.GetCategories();
             return Ok(categories.ToArray());
         }
     }
