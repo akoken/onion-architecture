@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>OnionArchitecture.DependencyResolution</AssemblyName>
+    <PackageId>OnionArchitecture.DependencyResolution</PackageId>
+    <RuntimeFrameworkVersion>1.0.3</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnionArchitecture.Core.ApplicationService\OnionArchitecture.Core.ApplicationService.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Core.DomainService\OnionArchitecture.Core.DomainService.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.csproj" />
+    <ProjectReference Include="..\OnionArchitecture.Infrastructure.Service\OnionArchitecture.Infrastructure.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.0.2" />
+    <PackageReference Include="SimpleInjector" Version="3.2.2" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore" Version="3.2.1" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="3.2.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,40 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{58853357-EE68-4FF6-93C3-9C7A639D762F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Core.Domain", "src\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.xproj", "{3AA97BD8-9EA7-450E-91E8-AE8E80BADFFF}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Core.DomainService", "src\OnionArchitecture.Core.DomainService\OnionArchitecture.Core.DomainService.xproj", "{23EFE073-53A9-403F-B390-21A0A8E6C7F8}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Core.ApplicationService", "src\OnionArchitecture.Core.ApplicationService\OnionArchitecture.Core.ApplicationService.xproj", "{61DDEBF9-242C-4F96-9979-516824EF7F1F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4CF8ADC5-7BB5-4BE2-9674-265751B0854E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Service", "src\OnionArchitecture.Infrastructure.Service\OnionArchitecture.Infrastructure.Service.xproj", "{079E0978-EF5F-430F-8F4D-DF40B960A6E2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D76B75CC-DF6E-4EB5-9D5C-D501209BDFE1}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Data", "src\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.xproj", "{C123628E-BBB6-4874-B90A-84D02D7F50A6}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Logging", "src\OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.xproj", "{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyResolution", "DependencyResolution", "{9A72B770-9C87-4AFA-A434-24AC38CD6ABE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.DependencyResolution", "src\OnionArchitecture.DependencyResolution\OnionArchitecture.DependencyResolution.xproj", "{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2949E672-3B49-4186-A3C6-BE4E5D60F08F}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.Infrastructure.Tests", "test\OnionArchitecture.Infrastructure.Tests\OnionArchitecture.Infrastructure.Tests.xproj", "{A6F70725-F317-42B4-A613-D18422A30074}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{9FDC61D1-C9B1-4728-9D8E-DA0E77C7F479}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnionArchitecture.UI.Web", "src\OnionArchitecture.UI.Web\OnionArchitecture.UI.Web.xproj", "{3ADF5326-3FD7-4337-86E7-F3CFB6E52EA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Core.Domain", "src\OnionArchitecture.Core.Domain\OnionArchitecture.Core.Domain.csproj", "{3AA97BD8-9EA7-450E-91E8-AE8E80BADFFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Core.DomainService", "src\OnionArchitecture.Core.DomainService\OnionArchitecture.Core.DomainService.csproj", "{23EFE073-53A9-403F-B390-21A0A8E6C7F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Core.ApplicationService", "src\OnionArchitecture.Core.ApplicationService\OnionArchitecture.Core.ApplicationService.csproj", "{61DDEBF9-242C-4F96-9979-516824EF7F1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Service", "src\OnionArchitecture.Infrastructure.Service\OnionArchitecture.Infrastructure.Service.csproj", "{079E0978-EF5F-430F-8F4D-DF40B960A6E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Data", "src\OnionArchitecture.Infrastructure.Data\OnionArchitecture.Infrastructure.Data.csproj", "{C123628E-BBB6-4874-B90A-84D02D7F50A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Logging", "src\OnionArchitecture.Infrastructure.Logging\OnionArchitecture.Infrastructure.Logging.csproj", "{A1C8514B-1D2D-4CFD-86B8-A13AA0C2BD14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.DependencyResolution", "src\OnionArchitecture.DependencyResolution\OnionArchitecture.DependencyResolution.csproj", "{F4235EBA-09CF-4328-8880-0D0E0D6F4E5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.Infrastructure.Tests", "test\OnionArchitecture.Infrastructure.Tests\OnionArchitecture.Infrastructure.Tests.csproj", "{A6F70725-F317-42B4-A613-D18422A30074}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnionArchitecture.UI.Web", "src\OnionArchitecture.UI.Web\OnionArchitecture.UI.Web.csproj", "{3ADF5326-3FD7-4337-86E7-F3CFB6E52EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
 var StoreService = (function () {
     function StoreService(http) {
         this.http = http;
@@ -18,11 +18,11 @@ var StoreService = (function () {
         return this.http.get('api/store')
             .map(function (response) { return response.json(); });
     };
-    StoreService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], StoreService);
     return StoreService;
 }());
+StoreService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], StoreService);
 exports.StoreService = StoreService;
 //# sourceMappingURL=store.service.js.map
