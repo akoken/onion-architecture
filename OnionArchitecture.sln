@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "src\Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "src\Infrastructure\Service\Service.csproj", "{89D9C3B7-62C5-4172-82FE-C8D441AC1AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\UI\Web\Web.csproj", "{6740AE9D-637A-459C-8C10-588A555411F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Client\Web\Web.csproj", "{6740AE9D-637A-459C-8C10-588A555411F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper", "src\DependencyResolution\Bootstrapper\Bootstrapper.csproj", "{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25}"
 EndProject
