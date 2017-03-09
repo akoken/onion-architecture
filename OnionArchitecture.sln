@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Client\Web\Web.c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrapper", "src\DependencyResolution\Bootstrapper\Bootstrapper.csproj", "{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CCD019FB-DDEF-4B19-8157-6B291DAC57C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Tests", "Test\Infrastructure.Tests\Infrastructure.Tests.csproj", "{58A00EC7-0D2C-4CAF-B0A9-285263849BAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +69,10 @@ Global
 		{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58A00EC7-0D2C-4CAF-B0A9-285263849BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58A00EC7-0D2C-4CAF-B0A9-285263849BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58A00EC7-0D2C-4CAF-B0A9-285263849BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58A00EC7-0D2C-4CAF-B0A9-285263849BAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +86,6 @@ Global
 		{89D9C3B7-62C5-4172-82FE-C8D441AC1AED} = {A8DF6B20-BE35-44C1-801A-3A48C1697B80}
 		{6740AE9D-637A-459C-8C10-588A555411F4} = {B879404B-FD26-440A-9D50-7D079131A69E}
 		{D6A2BDE9-58F4-4A27-B0EC-B771EB7E4B25} = {8E53892A-FD68-4BF0-BB00-83342BDF794D}
+		{58A00EC7-0D2C-4CAF-B0A9-285263849BAB} = {CCD019FB-DDEF-4B19-8157-6B291DAC57C4}
 	EndGlobalSection
 EndGlobal

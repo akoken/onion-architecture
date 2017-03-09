@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace OnionArchitecture.Infrastructure.Persistence.EntityFramework
 {
-    public sealed class StoreContext : DbContext, IStoreContext
+    public class StoreContext : DbContext, IStoreContext
     {
         public StoreContext() : base("Name=StoreConnection")
         {
@@ -15,8 +15,8 @@ namespace OnionArchitecture.Infrastructure.Persistence.EntityFramework
             Database.SetInitializer(initializer);
         }
 
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
 
         public int SaveChanges()
         {
