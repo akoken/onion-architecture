@@ -1,24 +1,15 @@
-version: '1.0.{build}'
-configuration:
-- Debug
-- Release
-platform: Any CPU
-environment:  
-  DOTNET_CLI_TELEMETRY_OPTOUT: 1
-init:
-- ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
+os: Visual Studio 2015
+install:
+  - set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+
+configuration: Release
+branches:
+  only:
+    - master
+
 before_build:
-- appveyor-retry dotnet restore -v Minimal
-build_script:
-- dotnet build "src\OnionArchitecture.Core.Domain" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.Core.DomainService" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.Core.ApplicationService" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.Infrastructure.Logging" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.Infrastructure.Data" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.Infrastructure.Service" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.DependencyResolution" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-- dotnet build "src\OnionArchitecture.UI.Web" -c %CONFIGURATION% --no-dependencies --version-suffix %LABEL%
-test_script:
-- dotnet test "test\OnionArchitecture.Infrastructure.Tests" -c %CONFIGURATION%
-cache:
-- '%USERPROFILE%\.nuget\packages'
+  - nuget restore OnionArchitecture.sln
+
+build:
+  project: OnionArchitecture.sln       
+  verbosity: minimal
